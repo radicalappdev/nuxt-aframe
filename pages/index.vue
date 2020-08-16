@@ -1,22 +1,24 @@
 <template>
-  <div class="container">
-    <div>
-      <Logo />
-      <h1 class="title">nuxt-aframe</h1>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >Documentation</a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >GitHub</a>
-        <NuxtLink to="/welcome">Welcome Page</NuxtLink>-->
+  <div class="bg-purple w-full h-full">
+    <div class="container">
+      <div>
+        <h1 class="text-2xl text-white">VR Sandbox</h1>
+        <h2 class="text-white">by Radical Application Development</h2>
+
+        <div class="grid grid-flow-row grid-cols-3 grid-rows-3 gap-4 my-10">
+          <NuxtLink
+            to="/welcome"
+            class="bg-gray-100 text-purple font-semibold rounded px-4 py-2 shadow-2xl"
+          >Welcome Page</NuxtLink>
+          <NuxtLink
+            to="/grey"
+            class="bg-gray-100 text-purple font-semibold rounded px-4 py-2"
+          >Grey Meditation</NuxtLink>
+          <NuxtLink
+            to="/shapes"
+            class="bg-gray-100 text-purple font-semibold rounded px-4 py-2"
+          >Just some shapes</NuxtLink>
+        </div>
       </div>
     </div>
   </div>

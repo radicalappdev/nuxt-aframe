@@ -27,6 +27,10 @@ export default {
     script: [
       {
         src: 'https://aframe.io/releases/1.0.4/aframe.min.js'
+      }, {
+        src: 'https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js'
+      }, {
+        src: 'https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js'
       }
     ],
   },
@@ -78,7 +82,11 @@ export default {
         'a-text',
         'a-sound',
         'a-asset-item',
-        'a-assets'
+        'a-assets',
+        'a-dodecahedron',
+        'a-tetrahedron',
+        'a-icosahedron',
+        'a-octahedron',
       ]
     }
   }
