@@ -1,6 +1,8 @@
 <template>
   <div class="sandbox">
-    <a-scene>
+    <a-scene vr-mode-ui="enterVRButton: #myEnterVRButton;">
+  <!-- Style the button with images or whatever. -->
+  <a id="myEnterVRButton" href="#">Enter VR</a>
       <a-assets>
         <audio id="ambient" src="/audio/Ambient001.mp3" preload="auto"></audio>
       </a-assets>
