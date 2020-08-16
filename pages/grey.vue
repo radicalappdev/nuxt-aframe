@@ -1,6 +1,19 @@
 <template>
   <div class="sandbox">
-    <a-scene fog="type: linear; color: #9ba8b8; far: 30; near: 1">
+    <!-- <a-scene fog="type: linear; color: #9ba8b8; far: 30; near: 1"> -->
+    <div style="height: 5rem;">
+      <a
+        id="myEnterVRButton"
+        class="float-right bg-gray-100 text-purple font-semibold rounded px-4 py-2 m-4"
+        href="#"
+      >Enter VR</a>
+    </div>
+    <a-scene
+      style="height: calc( 100vh - 5rem); "
+      embedded
+      vr-mode-ui="enterVRButton: #myEnterVRButton;"
+      fog="type: linear; color: #9ba8b8; far: 30; near: 1"
+    >
       <a-assets>
         <audio id="grey" src="audio/Gray_noise.mp3"></audio>
         <!-- <audio id="ambient" src="../assets/Ambient001.mp3"></audio> -->

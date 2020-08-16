@@ -1,6 +1,17 @@
 <template>
   <div>
-    <a-scene>
+    <div style="height: 5rem;">
+      <a
+        id="myEnterVRButton"
+        class="float-right bg-gray-100 text-purple font-semibold rounded px-4 py-2 m-4"
+        href="#"
+      >Enter VR</a>
+    </div>
+    <a-scene
+      style="height: calc( 100vh - 5rem); "
+      embedded
+      vr-mode-ui="enterVRButton: #myEnterVRButton;"
+    >
       <a-assets>
         <a-asset-item id="welcome" src="/1Story_Mat.gltf"></a-asset-item>
         <a-asset-item id="houseobj" src="/2Story_Mat.obj"></a-asset-item>
