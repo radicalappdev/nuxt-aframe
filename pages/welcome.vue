@@ -15,12 +15,24 @@
       ></a-entity>-->
 
       <a-entity
+        text="value: Welcome to nowhere; align: center;"
+        scale="10 10 10"
+        position="0 5 -10"
+      ></a-entity>
+
+      <a-entity
+        text="value: Don't let reality hit you on the way out; align: center;"
+        scale="5 5 5"
+        position="0 4 -10"
+      ></a-entity>
+
+      <!-- <a-entity
         obj-model="obj: #houseobj"
         material="color: #ff2975; emissive: #ff2975; emissiveIntensity: 0.8; "
         position="0 0.5 -10"
         rotation="0 30 0"
       ></a-entity>
-      <!-- <a-entity obj-model="obj: #houseobj; mtl: #housemat" position="0 0.5 -10" rotation="0 30 0"></a-entity> -->
+      <a-entity obj-model="obj: #houseobj; mtl: #housemat" position="0 0.5 -10" rotation="0 30 0"></a-entity>-->
 
       <a-entity
         environment="
