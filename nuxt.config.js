@@ -23,7 +23,12 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
-    ]
+    ],
+    script: [
+      {
+        src: 'https://aframe.io/releases/1.0.4/aframe.min.js'
+      }
+    ],
   },
   /*
   ** Global CSS
@@ -58,5 +63,23 @@ export default {
   ** See https://nuxtjs.org/api/configuration-build/
   */
   build: {
+  },
+  vue: {
+    config: {
+      productionTip: true,
+      devtools: false,
+      ignoredElements: [
+        'a-scene',
+        'a-entity',
+        'a-camera',
+        'a-sky',
+        'a-cylinder',
+        'a-box',
+        'a-text',
+        'a-sound',
+        'a-asset-item',
+        'a-assets'
+      ]
+    }
   }
 }
