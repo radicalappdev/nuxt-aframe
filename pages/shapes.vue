@@ -1,8 +1,18 @@
 <template>
   <div class="sandbox">
-    <a-scene vr-mode-ui="enterVRButton: #myEnterVRButton;">
-  <!-- Style the button with images or whatever. -->
-  <a id="myEnterVRButton" href="#">Enter VR</a>
+    <div style="height: 5rem;">
+      <a
+        id="myEnterVRButton"
+        class="float-right bg-gray-100 text-purple font-semibold rounded px-4 py-2 m-4"
+        href="#"
+      >Enter VR</a>
+    </div>
+    <a-scene
+      style="height: calc( 100vh - 5rem); "
+      embedded
+      vr-mode-ui="enterVRButton: #myEnterVRButton;"
+    >
+      <!-- Style the button with images or whatever. -->
       <a-assets>
         <audio id="ambient" src="/audio/Ambient001.mp3" preload="auto"></audio>
       </a-assets>
@@ -62,5 +72,9 @@ export default {
 };
 </script>
 
-<style>
+<style lang="css" scoped>
+/* a-scene {
+  height: 300px;
+  width: 600px;
+} */
 </style>
