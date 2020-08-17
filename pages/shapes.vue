@@ -1,9 +1,10 @@
 <template>
   <div class="sandbox">
-    <div style="height: 5rem;">
+    <div style="height: 5rem;" class="bg-black flex flex-row">
+      <div class="text-purple text-2xl flex-1 m-4">Shapes</div>
       <a
         id="myEnterVRButton"
-        class="float-right bg-gray-100 text-purple font-semibold rounded px-4 py-2 m-4"
+        class="float-right bg-pink text-white font-semibold rounded px-4 py-2 m-4"
         href="#"
       >Enter VR</a>
     </div>
