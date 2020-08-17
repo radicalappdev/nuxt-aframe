@@ -14,13 +14,12 @@
       vr-mode-ui="enterVRButton: #myEnterVRButton;"
     >
       <!-- Style the button with images or whatever. -->
-      <!-- <a-assets>
+      <a-assets>
         <audio id="ambient" src="/audio/Ambient001.mp3" preload="auto"></audio>
-      </a-assets>-->
+      </a-assets>
 
       <a-sound position="0 -1 -1" src="#ambient" autoplay="true" loop="true" on="true"></a-sound>
 
-      <!-- <a-entity animation="property: rotation; to: 360 0 0; loop: true; easing: linear; dur: 10000"> -->
       <a-entity animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000">
         <a-entity rotation="45 0 0" position="-20 10 -20">
           <a-dodecahedron
@@ -28,6 +27,16 @@
             material="color: #ff2975; emissive: #ff2975; emissiveIntensity: 0.8; "
             animation="property: rotation; to: 0 0 -360; loop: true; easing: linear; dur: 5000"
           ></a-dodecahedron>
+        </a-entity>
+
+        <a-entity rotation="45 0 0" position="0 10 -25">
+          <a-box
+            depth="5"
+            height="5"
+            width="5"
+            material="color: #1e20ff; emissive: #1e20ff; emissiveIntensity: 0.8; "
+            animation="property: rotation; to: 0 360 0 ; loop: true; easing: linear; dur: 5000"
+          ></a-box>
         </a-entity>
 
         <a-entity rotation="45 0 0" position="20 10 -20">
@@ -38,12 +47,30 @@
           ></a-tetrahedron>
         </a-entity>
 
+        <a-entity rotation="-45 0 0" position="25 10 0">
+          <a-torus
+            radius="4"
+            material="color: #ff1e20; emissive: #ff1e20; emissiveIntensity: 0.8; "
+            animation="property: rotation; to: 0 -360 0 ; loop: true; easing: linear; dur: 5000"
+          ></a-torus>
+        </a-entity>
+
         <a-entity rotation="45 0 0" position="-20 10 20">
           <a-icosahedron
             radius="5"
             material="color: #ffd319; emissive: #ffd319; emissiveIntensity: 0.8; "
             animation="property: rotation; to: 0 360 0 ; loop: true; easing: linear; dur: 5000"
           ></a-icosahedron>
+        </a-entity>
+
+        <a-entity rotation="45 0 0" position="0 10 25">
+          <a-sphere
+            radius="4"
+            segments-height="4"
+            segments-width="12"
+            material="color: #20ff1e; emissive: #20ff1e; emissiveIntensity: 0.8; "
+            animation="property: rotation; to: 0 360 0 ; loop: true; easing: linear; dur: 5000"
+          ></a-sphere>
         </a-entity>
 
         <a-entity rotation="45 0 0" position="20 10 20">
@@ -53,8 +80,16 @@
             animation="property: rotation; to: 0 0 360 ; loop: true; easing: linear;  dur: 5000"
           ></a-octahedron>
         </a-entity>
+
+        <a-entity rotation="-45 0 0" position="-25 10 0">
+          <a-cylinder
+            radius="2"
+            height="5"
+            material="color: #1efffd; emissive: #1efffd; emissiveIntensity: 0.8; "
+            animation="property: rotation; to: 0 0 360 ; loop: true; easing: linear; dur: 5000"
+          ></a-cylinder>
+        </a-entity>
       </a-entity>
-      <!-- </a-entity> -->
 
       <a-entity
         environment="
