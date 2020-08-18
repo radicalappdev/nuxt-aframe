@@ -1,6 +1,8 @@
 # nuxt-aframe
 
-This is a sandbox project where I'm learning how to work with Nuxt/Vue and AFrame.
+This is a sandbox project where I'm learning how to work with Nuxt/Vue and AFrame. 
+
+Check out the site in production here: [https://nuxt-aframe.vercel.app/](https://nuxt-aframe.vercel.app/)
 
 
 ## Build Setup
