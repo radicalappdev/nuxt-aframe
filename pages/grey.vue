@@ -13,7 +13,7 @@
       style="height: calc( 100vh - 5rem); "
       embedded
       vr-mode-ui="enterVRButton: #myEnterVRButton;"
-      fog="type: linear; color: #9ba8b8; far: 30; near: 1"
+      fog="type: linear; color: #9ba8b8; far: 35; near: 1"
     >
       <a-assets>
         <audio id="grey" src="audio/Gray_noise.mp3"></audio>
@@ -48,6 +48,16 @@
         radius="30"
         detail="4"
         animation="property: rotation; to: -360 0 0 ; loop: true; dur: 400000"
+        wireframe="true"
+        wireframeLinewidth="100"
+      ></a-icosahedron>
+
+      <a-icosahedron
+        color="#162229"
+        position="0 0 0"
+        radius="40"
+        detail="5"
+        animation="property: rotation; to: 0 -360 0 ; loop: true; dur: 500000"
         wireframe="true"
         wireframeLinewidth="100"
       ></a-icosahedron>

@@ -23,6 +23,11 @@
             to="/color"
             class="bg-purple text-white font-semibold rounded px-4 py-2"
           >Just some colors</NuxtLink>
+
+          <NuxtLink
+            to="/graveyard"
+            class="bg-purple text-white font-semibold rounded px-4 py-2"
+          >My project graveyard</NuxtLink>
         </div>
       </div>
     </div>
