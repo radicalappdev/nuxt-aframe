@@ -24,6 +24,8 @@
         <a-asset-item id="column" src="/models/graveyard/Column.obj"></a-asset-item>
         <a-asset-item id="columnBroken1" src="/models/graveyard/Column_Broken.obj"></a-asset-item>
         <a-asset-item id="columnBroken2" src="/models/graveyard/Column_Broken2.obj"></a-asset-item>
+
+        <a-asset-item id="gravestone1" src="/models/graveyard/Gravestone.obj"></a-asset-item>
       </a-assets>
 
       <a-entity
