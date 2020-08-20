@@ -13,18 +13,7 @@
       embedded
       vr-mode-ui="enterVRButton: #myEnterVRButton;"
     >
-      <a-assets>
-        <a-asset-item id="welcome" src="/1Story_Mat.gltf"></a-asset-item>
-        <a-asset-item id="houseobj" src="/2Story_Mat.obj"></a-asset-item>
-        <a-asset-item id="housemat" src="/2Story_Mat.mtl"></a-asset-item>
-      </a-assets>
-
-      <!-- <a-entity
-        gltf-model="#welcome"
-        position="3 0.5 -12"
-        rotation="0 30 0"
-        material="color: #f222ff; emissive: #f222ff; emissiveIntensity: 0.8; "
-      ></a-entity>-->
+      <a-assets></a-assets>
 
       <a-entity
         text="value: Welcome to nowhere; align: center;"

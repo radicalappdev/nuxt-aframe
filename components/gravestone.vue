@@ -10,6 +10,7 @@
 
     <a-entity :text="titleDisplay" scale="4 4 4" position="0 2.6 0.2"></a-entity>
     <a-entity :text="dateDisplay" scale="3 3 3" position="0 2.2 0.2"></a-entity>
+    <a-entity :text="detailDisplay" scale="2 2 2" position="0 2 0.2"></a-entity>
   </a-entity>
 </template>
 
@@ -23,7 +24,8 @@ export default {
     titleDisplay() {
       const pre = "value: ";
       const title = this.item.title;
-      const post = "; align: center;";
+      const post =
+        "; align: center; color: #B6B4B8; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt; ";
       const result = [pre, title, post].join("");
       return result;
     },
@@ -31,7 +33,15 @@ export default {
     dateDisplay() {
       const pre = "value: ";
       const title = this.item.date;
-      const post = "; align: center;";
+      const post = "; align: center; color: #B6B4B8";
+      const result = [pre, title, post].join("");
+      return result;
+    },
+
+    detailDisplay() {
+      const pre = "value: ";
+      const title = this.item.details;
+      const post = "; align: left; color: #B6B4B8; baseline: top;";
       const result = [pre, title, post].join("");
       return result;
     },
