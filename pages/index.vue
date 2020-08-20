@@ -29,7 +29,6 @@
             class="bg-purple text-white font-semibold rounded px-4 py-2"
           >My project graveyard</NuxtLink>
         </div>
-        <div></div>
       </div>
     </div>
   </div>

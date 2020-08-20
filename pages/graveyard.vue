@@ -67,8 +67,8 @@
       </a-entity>
 
       <!-- Gravestones / Projects -->
-      <a-entity v-for="item in projects" :key="item.title">
-        <gravestone v-bind:item="item" scale="0.3 0.3 0.3" />
+      <a-entity v-for="item in projectList" :key="item.title">
+        <gravestone v-bind:item="item" scale="0.4 0.4 0.4" />
       </a-entity>
 
       <!-- Player -->
@@ -87,33 +87,15 @@
 <script>
 export default {
   data: function () {
-    return {
-      projects: [
-        {
-          title: "Project Graveyard",
-          date: "2020 - ????",
-          details:
-            "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sollicitudin ac orci phasellus egestas tellus rutrum tellus pellentesque. Consequat mauris nunc congue nisi vitae. Massa sed elementum tempus egestas sed sed. Ac felis donec et odio pellentesque diam volutpat commodo.",
-          position: "-2 0 -4",
-        },
-        {
-          title: "Massively Unqualified: \nDevelopment",
-          date: "2016 - 2017",
-          details:
-            "My first podcast. My friend Dave and I started recording this in fall of 2016. For years we had been having long phone calls to discuss software development and nerd culture and we decided to start recording those calls. This show eventually morphed into VR Hermits.",
-          position: "-8 0 -16",
-        },
-        {
-          title: "VR Hermits",
-          date: "2017 - 2018",
-          details:
-            "After getting obsessed with VR in the winter of 2017 my friend Dave and I decided to turn refocus our podcast on VR. We kicked this off in June of 2017 and kept it going for about a year before getting distracted with other projects.",
-          position: "-10 0 -16",
-        },
-      ],
-    };
+    return {};
   },
-  components: {},
+  computed: {
+    projectList() {
+      var lineItems = Object.values(this.$store.state.projects.projectData);
+      console.log(lineItems);
+      return lineItems;
+    },
+  },
 };
 </script>
 
