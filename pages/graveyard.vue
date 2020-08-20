@@ -61,10 +61,12 @@
 
       <a-entity movement-controls="fly: false; enabled: true;" position="0 0 0">
         <a-entity camera position="0 0 0" look-controls="pointerLockEnabled: true"></a-entity>
+        <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+        <a-entity
+          id="rightHand"
+          hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
+        ></a-entity>
       </a-entity>
-      <!-- <a-entity oculus-go-controls></a-entity> -->
-      <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
-      <a-entity id="rightHand" hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
     </a-scene>
   </div>
 </template>
