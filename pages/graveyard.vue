@@ -27,9 +27,10 @@
 
         <a-asset-item id="gravestone1" src="/models/graveyard/Gravestone.obj"></a-asset-item>
       </a-assets>
-
-      <a-entity
-        environment="
+      <!-- Scene Background -->
+      <a-entity>
+        <a-entity
+          environment="
         ground: flat;
         groundYScale: 25;
         groundTexture: none;
@@ -42,25 +43,28 @@
         skyColor: #0f107f;
         horizonColor: #8c1eff;
         "
-      ></a-entity>
+        ></a-entity>
 
-      <entrance />
-      <columns />
+        <entrance />
+        <columns />
 
-      <a-entity
-        obj-model="obj: #building"
-        material="color: #54505A; emissive: #54505A; emissiveIntensity: 0.8; "
-        position="-0 0 -50"
-        rotation="0 0 0"
-        scale="4 4 4"
-      ></a-entity>
+        <a-entity
+          obj-model="obj: #building"
+          material="color: #54505A; emissive: #54505A; emissiveIntensity: 0.8; "
+          position="-0 0 -50"
+          rotation="0 0 0"
+          scale="4 4 4"
+        ></a-entity>
+      </a-entity>
 
+      <!-- Gravestones / Projects -->
       <a-entity v-for="item in projects" :key="item.title">
         <gravestone v-bind:item="item" scale="0.5 0.5 0.5" />
       </a-entity>
 
+      <!-- Player -->
       <a-entity movement-controls="fly: false; enabled: true;" position="0 0 0">
-        <a-entity camera position="0 0 0" look-controls="pointerLockEnabled: true"></a-entity>
+        <a-entity camera position="0 1.6 0" look-controls="pointerLockEnabled: true"></a-entity>
         <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
         <a-entity
           id="rightHand"
