@@ -8,9 +8,9 @@
       scale="0.016 0.018 0.014"
     ></a-entity>
 
-    <a-entity :text="titleDisplay" scale="4 4 4" position="0 2.6 0.2"></a-entity>
-    <a-entity :text="dateDisplay" scale="3 3 3" position="0 2.2 0.2"></a-entity>
-    <a-entity :text="detailDisplay" scale="2 2 2" position="0 2 0.2"></a-entity>
+    <a-entity :text="titleDisplay" position="0 2.6 0.2"></a-entity>
+    <a-entity :text="dateDisplay" position="0 2.2 0.2"></a-entity>
+    <a-entity :text="detailDisplay" position="0 1.9 0.2"></a-entity>
   </a-entity>
 </template>
 
@@ -25,7 +25,7 @@ export default {
       const pre = "value: ";
       const title = this.item.title;
       const post =
-        "; align: center; color: #B6B4B8; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt; ";
+        "; align: center; color: #B6B4B8; font: https://cdn.aframe.io/fonts/Exo2Bold.fnt; width: 4;";
       const result = [pre, title, post].join("");
       return result;
     },
@@ -33,7 +33,7 @@ export default {
     dateDisplay() {
       const pre = "value: ";
       const title = this.item.date;
-      const post = "; align: center; color: #B6B4B8";
+      const post = "; align: center; color: #B6B4B8; width: 3;";
       const result = [pre, title, post].join("");
       return result;
     },
@@ -41,7 +41,7 @@ export default {
     detailDisplay() {
       const pre = "value: ";
       const title = this.item.details;
-      const post = "; align: left; color: #B6B4B8; baseline: top;";
+      const post = "; align: left; color: #B6B4B8; baseline: top; width: 2;";
       const result = [pre, title, post].join("");
       return result;
     },

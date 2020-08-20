@@ -68,7 +68,7 @@
 
       <!-- Gravestones / Projects -->
       <a-entity v-for="item in projects" :key="item.title">
-        <gravestone v-bind:item="item" scale="0.5 0.5 0.5" />
+        <gravestone v-bind:item="item" scale="0.3 0.3 0.3" />
       </a-entity>
 
       <!-- Player -->
