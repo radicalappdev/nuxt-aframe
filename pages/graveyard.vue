@@ -58,6 +58,11 @@
       <a-entity v-for="item in projects" :key="item.title">
         <gravestone v-bind:item="item" scale="0.5 0.5 0.5" />
       </a-entity>
+
+      <a-entity movement-controls="fly: true" position="0 0 0">
+        <a-entity camera position="0 1.6 0"></a-entity>
+      </a-entity>
+      <a-entity oculus-go-controls></a-entity>
     </a-scene>
   </div>
 </template>
@@ -71,6 +76,16 @@ export default {
           title: "Project Graveyard",
           date: "2020 - ????",
           position: "-2 0 -4",
+        },
+        {
+          title: "Massively Unqualified: \nDevelopment",
+          date: "2016 - 2017",
+          position: "-8 0 -16",
+        },
+        {
+          title: "VR Hermits",
+          date: "2017 - 2018",
+          position: "-10 0 -16",
         },
       ],
     };
