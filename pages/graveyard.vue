@@ -59,10 +59,10 @@
         <gravestone v-bind:item="item" scale="0.5 0.5 0.5" />
       </a-entity>
 
-      <a-entity movement-controls="fly: true" position="0 0 0">
+      <a-entity movement-controls="fly: false; enabled: true;" position="0 0 0">
         <a-entity camera position="0 1.6 0"></a-entity>
       </a-entity>
-      <a-entity oculus-go-controls></a-entity>
+      <!-- <a-entity oculus-go-controls></a-entity> -->
     </a-scene>
   </div>
 </template>
