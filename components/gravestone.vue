@@ -1,7 +1,7 @@
 <template>
   <a-entity :position="item.position">
     <a-cylinder
-      color="#54505A"
+      material="color: #3C3743; emissive: #3C3743; emissiveIntensity: 0.8; "
       segments-radial="12"
       theta-start="-90"
       theta-length="180"
@@ -10,7 +10,22 @@
       height="0.2"
     ></a-cylinder>
 
-    <a-box color="#54505A" height="4" width="2" depth="0.2" position="0 0 0"></a-box>
+    <a-box
+      material="color: #3C3743; emissive: #3C3743; emissiveIntensity: 0.8; "
+      height="4"
+      width="2"
+      depth="0.2"
+      position="0 0 0"
+    ></a-box>
+
+    <a-box
+      material="color: #3C3743; emissive: #3C3743; emissiveIntensity: 0.8; "
+      height="0.4"
+      width="2.4"
+      depth="0.6"
+      position="0 0 0"
+    ></a-box>
+
     <a-entity :text="titleDisplay" scale="4 4 4" position="0 2 0.1"></a-entity>
     <a-entity :text="dateDisplay" scale="3 3 3" position="0 1.7 0.1"></a-entity>
   </a-entity>

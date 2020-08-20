@@ -13,8 +13,8 @@
       style="height: calc( 100vh - 5rem); "
       embedded
       vr-mode-ui="enterVRButton: #myEnterVRButton;"
-      fog="type: linear; color: #9ba8b8; far: 35; near: 1"
     >
+      <!-- fog="type: linear; color: #9ba8b8; far: 35; near: 1" -->
       <a-assets>
         <audio id="grey" src="audio/Gray_noise.mp3"></audio>
         <!-- <audio id="ambient" src="../assets/Ambient001.mp3"></audio> -->
@@ -40,7 +40,7 @@
       ></a-entity>
 
       <a-entity v-for="item in projects" :key="item.title">
-        <gravestone v-bind:item="item" />
+        <gravestone v-bind:item="item" scale="0.5 0.5 0.5" />
       </a-entity>
 
       <a-entity
@@ -50,16 +50,31 @@
         rotation="0 30 0"
       ></a-entity>
 
-      <a-box
+      <!-- <a-box
         position="0 -0.25 0"
         rotation="0 0 0"
         width="200"
         height="0.5"
         depth="200"
         color="#162229"
-      ></a-box>
+      ></a-box>-->
 
-      <a-sky color="#9ba8b8"></a-sky>
+      <!-- <a-sky color="#9ba8b8"></a-sky> -->
+
+      <a-entity
+        environment="
+        ground: spikes;
+        groundYScale: 25;
+        groundTexture: none;
+        grid: none;        
+        groundColor: #0c0c0c; 
+        groundColor2: #8c1eff;
+
+        skyType: gradient;
+        skyColor: #0f107f;
+        horizonColor: #8c1eff
+        "
+      ></a-entity>
     </a-scene>
   </div>
 </template>
@@ -72,7 +87,7 @@ export default {
         {
           title: "Project Graveyard",
           date: "2020 - ????",
-          position: "-4 0 -5",
+          position: "-2 0 -2",
         },
       ],
     };
