@@ -89,5 +89,10 @@ export default {
         'a-octahedron',
       ]
     }
-  }
+  },
+  // Force the live preview to work on the local IP of the machine
+  // This is not usefor for WebXR projecte because these need to be served of HTTPS
+  // server: {
+  //   host: '0.0.0.0'
+  // }
 }
