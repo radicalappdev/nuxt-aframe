@@ -72,8 +72,8 @@
       </a-entity>
 
       <!-- Player -->
-      <a-entity movement-controls="fly: false; enabled: true;" position="0 0 0">
-        <a-entity camera position="0 1.6 0" look-controls="pointerLockEnabled: true"></a-entity>
+      <a-entity id="rig" movement-controls="fly: false; enabled: true;">
+        <a-entity id="camera" camera position="0 1.6 0" look-controls="pointerLockEnabled: true"></a-entity>
         <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
         <a-entity
           id="rightHand"

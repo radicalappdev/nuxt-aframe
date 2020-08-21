@@ -87,6 +87,8 @@ export default {
         'a-tetrahedron',
         'a-icosahedron',
         'a-octahedron',
+        'a-sphere',
+        'a-torus',
       ]
     }
   },
