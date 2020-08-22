@@ -60,7 +60,7 @@
         <a-entity
           obj-model="obj: #building"
           material="color: #54505A; emissive: #54505A; emissiveIntensity: 0.8; "
-          position="-0 0 -50"
+          position="-0 0 -42"
           rotation="0 0 0"
           scale="4 4 4"
         ></a-entity>
