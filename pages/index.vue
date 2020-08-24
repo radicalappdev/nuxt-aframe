@@ -33,6 +33,11 @@
             to="/cameraparty"
             class="bg-purple text-white font-semibold rounded px-4 py-2"
           >Camera Party</NuxtLink>-->
+
+          <NuxtLink
+            to="/hills"
+            class="bg-purple text-white font-semibold rounded px-4 py-2"
+          >Just some hills</NuxtLink>
         </div>
       </div>
     </div>
