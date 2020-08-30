@@ -38,6 +38,11 @@
             to="/hills"
             class="bg-purple text-white font-semibold rounded px-4 py-2"
           >Just some hills</NuxtLink>
+
+          <NuxtLink
+            to="/input"
+            class="bg-purple text-white font-semibold rounded px-4 py-2"
+          >Controller Input</NuxtLink>
         </div>
       </div>
     </div>
