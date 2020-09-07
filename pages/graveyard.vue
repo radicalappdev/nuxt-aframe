@@ -17,6 +17,8 @@
     >
       <a-assets>
         <audio id="grey" src="audio/Gray_noise.mp3"></audio>
+        <audio id="ambient" src="/audio/Ambient001.mp3" preload="auto"></audio>
+
         <a-asset-item id="gateway" src="/models/graveyard/Entrance2.obj"></a-asset-item>
         <a-asset-item id="wall1" src="/models/graveyard/Floor_Modular.obj"></a-asset-item>
         <a-asset-item id="building" src="/models/graveyard/HouseWithFlatRoof.obj"></a-asset-item>
@@ -63,6 +65,7 @@
           position="-0 0 -42"
           rotation="0 0 0"
           scale="4 4 4"
+          sound="src: #ambient; autoplay: true;"
         ></a-entity>
       </a-entity>
 
