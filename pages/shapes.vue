@@ -18,7 +18,7 @@
         <audio id="ambient" src="/audio/Ambient001.mp3" preload="auto"></audio>
       </a-assets>
 
-      <a-sound position="0 -1 -1" src="#ambient" autoplay="true" loop="true"></a-sound>
+      <a-sound position="0 -1 -5" src="#ambient" autoplay="true" positional="false" loop="true"></a-sound>
 
       <a-entity animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000">
         <a-entity rotation="45 0 0" position="-20 10 -20">
