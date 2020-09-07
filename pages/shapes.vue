@@ -27,7 +27,7 @@
           id="rightHand"
           hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
         ></a-entity>
-        <a-sound src="#ambient" autoplay="true" positional="false" loop="true"></a-sound>
+        <a-entity sound="src: #ambient; autoplay: true;"></a-entity>
       </a-entity>
 
       <a-entity animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000">
