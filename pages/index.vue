@@ -43,6 +43,11 @@
             to="/input"
             class="bg-purple text-white font-semibold rounded px-4 py-2"
           >Controller Input</NuxtLink>
+
+          <NuxtLink
+            to="/physics"
+            class="bg-purple text-white font-semibold rounded px-4 py-2"
+          >Physics</NuxtLink>
         </div>
       </div>
     </div>

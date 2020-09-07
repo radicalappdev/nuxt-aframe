@@ -31,6 +31,8 @@ export default {
         src: 'https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js'
       }, {
         src: 'https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js'
+      }, {
+        src: 'https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js'
       }
     ],
   },
