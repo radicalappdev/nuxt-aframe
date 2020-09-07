@@ -18,7 +18,17 @@
         <audio id="ambient" src="/audio/Ambient001.mp3" preload="auto"></audio>
       </a-assets>
 
-      <a-sound position="0 -1 -5" src="#ambient" autoplay="true" positional="false" loop="true"></a-sound>
+      <!-- <a-sound position="0 -1 -5" src="#ambient" autoplay="true" positional="false" loop="true"></a-sound> -->
+
+      <a-entity id="rig" movement-controls="fly: false; enabled: true;">
+        <a-entity id="camera" camera position="0 1.6 0" look-controls="pointerLockEnabled: true"></a-entity>
+        <a-entity id="leftHand" hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"></a-entity>
+        <a-entity
+          id="rightHand"
+          hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
+        ></a-entity>
+        <a-sound src="#ambient" autoplay="true" positional="false" loop="true"></a-sound>
+      </a-entity>
 
       <a-entity animation="property: rotation; to: 0 360 0; loop: true; easing: linear; dur: 10000">
         <a-entity rotation="45 0 0" position="-20 10 -20">
