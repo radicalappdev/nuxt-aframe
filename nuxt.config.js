@@ -26,7 +26,8 @@ export default {
     ],
     script: [
       {
-        src: 'https://aframe.io/releases/1.0.4/aframe.min.js'
+        // src: 'https://aframe.io/releases/1.0.4/aframe.min.js'
+        src: 'https://cdn.jsdelivr.net/gh/aframevr/aframe@7b3f4b5a611f13ce1e8d69ed4d670e3b95a0243d/dist/aframe-master.min.js'
       }, {
         src: 'https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js'
       }, {
