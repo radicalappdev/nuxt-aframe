@@ -29,17 +29,9 @@
       ></a-box>
 
       <a-camera>
-        <a-entity
-          tracked-controls
-          vive-controls
-          oculus-touch-controls
-          oculus-go-controls
-          hand-controls
-          laser-controls
-          sphere-collider
-          grab
-          throw
-        ></a-entity>
+        <!-- <a-entity oculus-touch-controls oculus-go-controls laser-controls sphere-collider></a-entity> -->
+        <a-entity id="leftHand" hand-tracking-controls="hand: left;"></a-entity>
+        <a-entity id="rightHand" hand-tracking-controls="hand: right;"></a-entity>
       </a-camera>
 
       <a-camera>
