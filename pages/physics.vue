@@ -29,6 +29,20 @@
       ></a-box>
 
       <a-camera>
+        <a-entity
+          tracked-controls
+          vive-controls
+          oculus-touch-controls
+          oculus-go-controls
+          hand-controls
+          laser-controls
+          sphere-collider
+          grab
+          throw
+        ></a-entity>
+      </a-camera>
+
+      <a-camera>
         <a-cursor></a-cursor>
       </a-camera>
     </a-scene>

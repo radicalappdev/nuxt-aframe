@@ -24,7 +24,16 @@
 
       <a-camera>
         <a-cursor></a-cursor>
-        <a-entity oculus-go-controls></a-entity>
+        <a-entity
+          tracked-controls
+          vive-controls
+          oculus-touch-controls
+          hand-controls
+          laser-controls
+          sphere-collider
+          grab
+          throw
+        ></a-entity>
       </a-camera>
 
       <a-entity
