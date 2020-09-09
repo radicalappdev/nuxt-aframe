@@ -31,23 +31,26 @@ export default {
       }, {
         src: 'https://cdn.jsdelivr.net/gh/donmccurdy/aframe-extras@v6.1.0/dist/aframe-extras.min.js'
       }, {
-        src: 'https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js'
+        src: 'https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js'
       }, {
         src: 'https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js'
       }, {
-        scr: '~/assets/scripts/button.js'
+        scr: 'js/button.js'
       }, {
-        scr: '~/assets/scripts/color-change.js'
+        scr: 'js/color-change.js'
       }, {
-        scr: '~/assets/scripts/event-manager.js'
+        scr: 'js/event-manager.js'
       }, {
-        scr: '~/assets/scripts/menu.js'
+        scr: 'js/menu.js'
       }, {
-        scr: '~/assets/scripts/pinchable.js'
+        scr: 'js/pinchable.js'
       }, {
-        scr: '~/assets/scripts/size-change.js'
+
+        scr: 'js/pressable.js'
       }, {
-        scr: '~/assets/scripts/slider.js'
+        scr: 'js/size-change.js'
+      }, {
+        scr: 'js/slider.js'
       }
     ],
   },

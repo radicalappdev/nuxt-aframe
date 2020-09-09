@@ -15,6 +15,12 @@
       vr-mode-ui="enterVRButton: #myEnterVRButton;"
     >
       <a-entity
+        position="0 2.0 -1"
+        rotation="45 45 0"
+        geometry="primitive: box; height: 0.6; width: 0.6; depth: 0.6"
+        material="color: #ff4b5c"
+      ></a-entity>
+      <!-- <a-entity
         id="boxGeometry"
         position="0 2.0 -1"
         rotation="45 45 0"
@@ -22,8 +28,8 @@
         material="color: #ff4b5c"
         size-change
         scale="0.5 0.5 0.5"
-      ></a-entity>
-      <a-entity
+      ></a-entity>-->
+      <!-- <a-entity
         id="torusGeometry"
         position="0 2.0 -1"
         rotation="45 45 0"
@@ -32,8 +38,8 @@
         size-change
         visible="false"
         scale="0.5 0.5 0.5"
-      ></a-entity>
-      <a-entity
+      ></a-entity>-->
+      <!-- <a-entity
         id="sphereGeometry"
         position="0 2.0 -1"
         rotation="45 45 0"
@@ -42,8 +48,8 @@
         size-change
         visible="false"
         scale="0.5 0.5 0.5"
-      ></a-entity>
-      <a-entity id="menu" menu position="0 1.5 -0.5" rotation="-45 0 0" event-manager>
+      ></a-entity>-->
+      <!-- <a-entity id="menu" menu position="0 1.5 -0.5" rotation="-45 0 0" event-manager>
         <a-entity slider position="0 0.10 0"></a-entity>
         <a-entity id="sphereButton" button="label: sphere" position="-0.15 0 0"></a-entity>
         <a-entity id="boxButton" button="label: box" position="0 0 0"></a-entity>
@@ -53,9 +59,9 @@
           button="label: Dark Mode; width: 0.20; toggable: true"
           position="0 -0.10 0"
         ></a-entity>
-      </a-entity>
-      <a-entity hand-tracking-controls="hand: left"></a-entity>
-      <a-entity hand-tracking-controls="hand: right"></a-entity>
+      </a-entity>-->
+      <!-- <a-entity hand-tracking-controls="hand: left"></a-entity> -->
+      <!-- <a-entity hand-tracking-controls="hand: right"></a-entity> -->
     </a-scene>
   </div>
 </template>

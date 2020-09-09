@@ -29,11 +29,6 @@
             class="bg-purple text-white font-semibold rounded px-4 py-2"
           >My project graveyard</NuxtLink>
 
-          <!-- <NuxtLink
-            to="/cameraparty"
-            class="bg-purple text-white font-semibold rounded px-4 py-2"
-          >Camera Party</NuxtLink>-->
-
           <NuxtLink
             to="/hills"
             class="bg-purple text-white font-semibold rounded px-4 py-2"
