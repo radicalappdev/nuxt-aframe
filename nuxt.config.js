@@ -34,6 +34,20 @@ export default {
         src: 'https://unpkg.com/aframe-environment-component/dist/aframe-environment-component.min.js'
       }, {
         src: 'https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js'
+      }, {
+        scr: 'scripts/button.js'
+      }, {
+        scr: 'scripts/color-change.js'
+      }, {
+        scr: 'scripts/event-manager.js'
+      }, {
+        scr: 'scripts/menu.js'
+      }, {
+        scr: 'scripts/pinchable.js'
+      }, {
+        scr: 'scripts/size-change.js'
+      }, {
+        scr: 'scripts/slider.js'
       }
     ],
   },
