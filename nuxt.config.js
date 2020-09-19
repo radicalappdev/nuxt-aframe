@@ -34,24 +34,26 @@ export default {
         src: 'https://unpkg.com/aframe-environment-component@1.1.0/dist/aframe-environment-component.min.js'
       }, {
         src: 'https://cdn.rawgit.com/donmccurdy/aframe-physics-system/v4.0.1/dist/aframe-physics-system.min.js'
-      }, {
-        scr: 'js/button.js'
-      }, {
-        scr: 'js/color-change.js'
-      }, {
-        scr: 'js/event-manager.js'
-      }, {
-        scr: 'js/menu.js'
-      }, {
-        scr: 'js/pinchable.js'
-      }, {
+      },
 
-        scr: 'js/pressable.js'
-      }, {
-        scr: 'js/size-change.js'
-      }, {
-        scr: 'js/slider.js'
-      }
+      // {
+      //   scr: 'js/button.js'
+      // }, {
+      //   scr: 'js/color-change.js'
+      // }, {
+      //   scr: 'js/event-manager.js'
+      // }, {
+      //   scr: 'js/menu.js'
+      // }, {
+      //   scr: 'js/pinchable.js'
+      // }, {
+
+      //   scr: 'js/pressable.js'
+      // }, {
+      //   scr: 'js/size-change.js'
+      // }, {
+      //   scr: 'js/slider.js'
+      // }
     ],
   },
   /*
