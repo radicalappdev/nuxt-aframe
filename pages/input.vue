@@ -13,7 +13,7 @@
         change-color-on-hover="color: blue"
       ></a-box>
 
-      <!-- <a-camera>
+      <a-camera>
         <a-cursor></a-cursor>
         <a-entity
           tracked-controls
@@ -25,7 +25,7 @@
           grab
           throw
         ></a-entity>
-      </a-camera> -->
+      </a-camera>
 
       <a-entity
         environment="
@@ -43,7 +43,7 @@
       ></a-entity>
 
       <!-- Player -->
-      <a-entity id="rig" movement-controls="fly: false; enabled: true;">
+      <!-- <a-entity id="rig" movement-controls="fly: false; enabled: true;">
         <a-cursor></a-cursor>
 
         <a-entity
@@ -64,7 +64,8 @@
           sphere-collider
           grab
         ></a-entity>
-      </a-entity>
+   
+      </a-entity> -->
     </a-scene>
   </div>
 </template>
