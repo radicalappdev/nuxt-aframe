@@ -1,18 +1,9 @@
 <template>
   <div>
-    <div style="height: 5rem;" class="bg-black flex flex-row">
+    <div style="height: 5rem" class="bg-black flex flex-row">
       <div class="text-purple text-2xl flex-1 m-4">Welcome</div>
-      <a
-        id="myEnterVRButton"
-        class="float-right bg-pink text-white font-semibold rounded px-4 py-2 m-4"
-        href="#"
-      >Enter VR</a>
     </div>
-    <a-scene
-      style="height: calc( 100vh - 5rem); "
-      embedded
-      vr-mode-ui="enterVRButton: #myEnterVRButton;"
-    >
+    <a-scene style="height: calc(100vh - 5rem)" embedded>
       <a-assets></a-assets>
 
       <a-box
@@ -22,7 +13,7 @@
         change-color-on-hover="color: blue"
       ></a-box>
 
-      <a-camera>
+      <!-- <a-camera>
         <a-cursor></a-cursor>
         <a-entity
           tracked-controls
@@ -34,7 +25,7 @@
           grab
           throw
         ></a-entity>
-      </a-camera>
+      </a-camera> -->
 
       <a-entity
         environment="
@@ -50,6 +41,30 @@
         horizonColor: #8c1eff
         "
       ></a-entity>
+
+      <!-- Player -->
+      <a-entity id="rig" movement-controls="fly: false; enabled: true;">
+        <a-cursor></a-cursor>
+
+        <a-entity
+          id="camera"
+          camera
+          position="0 1.6 0"
+          look-controls="pointerLockEnabled: true"
+        ></a-entity>
+        <a-entity
+          id="leftHand"
+          hand-controls="hand: left; handModelStyle: lowPoly; color: #ffcccc"
+          sphere-collider
+          grab
+        ></a-entity>
+        <a-entity
+          id="rightHand"
+          hand-controls="hand: right; handModelStyle: lowPoly; color: #ffcccc"
+          sphere-collider
+          grab
+        ></a-entity>
+      </a-entity>
     </a-scene>
   </div>
 </template>
